@@ -1,0 +1,317 @@
+:root {
+  --black: #4d4c59;
+  --purple: #6c63ff;
+  --light-grey: #c8c8c8;
+  --text-color: #9c9ab6;
+  --vermelho: rgb(124, 3, 3);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./images/tribal.svg);
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: 100%;
+}
+header {
+  display: flex;
+  padding: 2rem;
+  background-color: rgb(8, 114, 67);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 80%;
+}
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+#logo img {
+  height: 80px;
+  height: 80px;
+  border-radius: 50px;
+  background-color: white;
+}
+.menu {
+  justify-content: center;
+}
+.menu ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  justify-content: space-between;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  /* height: 50vh; */
+  margin: 4rem 1rem;
+  justify-content: center;
+  gap: 1;
+}
+main {
+  background-color: rgb(254, 238, 238);
+  flex-basis: 1;
+  margin: 1rem 2rem;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  height: auto;
+  width: 35vw;
+  border-radius: 25px;
+  border: solid 1px rgb(124, 3, 3);
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+h2 {
+  color: rgb(124, 3, 3);
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.titulos {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  justify-content: center;
+  text-transform: uppercase;
+  gap: 0.5rem;
+}
+.divisor {
+  align-self: flex-end;
+  font-size: 2rem;
+}
+.dia {
+  text-align: center;
+}
+.hora {
+  text-align: center;
+  /* margin: 0 1rem; */
+}
+.minuto {
+  text-align: center;
+  /* margin: 0 1rem; */
+}
+.segundo {
+  text-align: center;
+  /* margin: 0 1rem; */
+}
+.timer {
+  color: var(--black);
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  justify-content: center;
+}
+aside {
+  flex-basis: 1;
+  align-self: center;
+  margin: 1rem 2rem;
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: rgb(124, 3, 3);
+
+  background-color: rgb(254, 238, 238);
+  border-radius: 25px;
+  border: rgb(124, 3, 3) solid 1px;
+}
+#cidade {
+  flex-basis: 1;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  margin: 1rem 2rem;
+  border: 1px solid green;
+  border-radius: 25px;
+  color: var(--vermelho);
+  width: 35vw;
+}
+h3 {
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2rem 0;
+}
+.texto {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  text-align: justify;
+}
+#mapa {
+  flex-basis: 1;
+  background-color: rgb(171, 208, 171);
+  padding: 1rem;
+  border: 1px solid green;
+  border-radius: 25px;
+  margin: 1rem 2rem;
+}
+#mapa iframe {
+  width: 560px;
+}
+
+#historia {
+  margin: 1rem 4rem;
+  background-color: rgb(254, 238, 238);
+  border-radius: 25px;
+  border: rgb(124, 3, 3) solid 1px;
+  padding: 1rem;
+  color: var(--vermelho);
+}
+.bloco-branco {
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 1rem;
+}
+.bloco-vermelho {
+  background-color: var(--vermelho);
+  border-radius: 25px;
+  padding: 1rem;
+  color: white;
+}
+
+.munduruku {
+  display: flex;
+  margin: 1rem 0;
+  background: rgba(214, 124, 124, 0.49);
+  padding: 2rem;
+  color: var(--vermelho);
+  justify-content: center;
+}
+#muirapinima {
+  display: flex;
+  margin: 1rem 0;
+  background: rgba(214, 124, 124, 0.49);
+  background-position: center;
+  padding: 2rem;
+  color: white;
+  justify-content: center;
+}
+.tribo {
+  width: 50vw;
+  margin: 0 2rem;
+  background-color: rgba(255, 255, 0, 0.779);
+  padding: 2rem;
+  border-radius: 25px;
+}
+.tribo-muira {
+  width: 50vw;
+  margin: 0 2rem;
+  background-color: rgba(0, 4, 208, 0.779);
+  padding: 2rem;
+  border-radius: 25px;
+}
+.imagem {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem auto;
+}
+.imagem img {
+  width: 500px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(8, 114, 67);
+  height: 200px;
+  align-items: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+@media only screen and (max-width: 500px) {
+  .menu {
+    justify-content: center;
+    margin: auto;
+  }
+  #logo {
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+  }
+  .content {
+    margin: auto;
+  }
+  main {
+    width: auto;
+  }
+  .timer {
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    justify-content: center;
+  }
+  .titulos {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    justify-content: center;
+    text-transform: uppercase;
+    gap: 0.5rem;
+  }
+  .divisor {
+    align-self: flex-end;
+    font-size: 1.5rem;
+  }
+  iframe {
+    height: auto;
+    width: auto;
+  }
+  #cidade {
+    width: auto;
+  }
+  #mapa iframe {
+    height: 400px;
+    width: auto;
+  }
+  #historia {
+    width: auto;
+    margin: 2rem;
+  }
+  .tribo {
+    width: auto;
+    margin: 1rem 0;
+  }
+  .imagem img {
+    width: 250px;
+  }
+  .tribo-muira {
+    width: auto;
+    margin: 1rem 0;
+  }
+}
+
+/* footer {
+  position: absolute;
+  margin-left: -2rem;
+  bottom: 0;
+}
+footer path {
+  fill: #000085;
+} */
