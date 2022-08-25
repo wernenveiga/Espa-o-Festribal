@@ -3,7 +3,7 @@
   --purple: #6c63ff;
   --light-grey: #c8c8c8;
   --text-color: #9c9ab6;
-  --vermelho: rgb(124, 3, 3);
+  --vermelho: #891e20;
 }
 * {
   margin: 0;
@@ -12,6 +12,7 @@
 
 body {
   background-image: url(./images/tribal.svg);
+  background-color: white;
   background-repeat: repeat-y;
   background-position: center;
   background-size: 100%;
@@ -19,7 +20,7 @@ body {
 header {
   display: flex;
   padding: 2rem;
-  background-color: rgb(8, 114, 67);
+  background-color: #891e20;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -55,9 +56,12 @@ nav {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
 }
-a {
+.menu a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: white;
+}
+.menu a:hover {
+  color: rgb(190, 189, 189);
 }
 .content {
   display: flex;
@@ -68,7 +72,7 @@ a {
   gap: 1;
 }
 main {
-  background-color: rgb(254, 238, 238);
+  background-color: white;
   flex-basis: 1;
   margin: 1rem 2rem;
   padding: 1rem;
@@ -89,7 +93,7 @@ h1 {
   text-align: center;
 }
 h2 {
-  color: rgb(124, 3, 3);
+  color: var(--vermelho);
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   text-align: center;
@@ -102,6 +106,7 @@ h2 {
   justify-content: center;
   text-transform: uppercase;
   gap: 0.5rem;
+  color: var(--vermelho);
 }
 .divisor {
   align-self: flex-end;
@@ -123,9 +128,9 @@ h2 {
   /* margin: 0 1rem; */
 }
 .timer {
-  color: var(--black);
+  color: var(--vermelho);
   font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   justify-content: center;
 }
 aside {
@@ -137,18 +142,18 @@ aside {
   text-align: center;
   color: rgb(124, 3, 3);
 
-  background-color: rgb(254, 238, 238);
+  background-color: white;
   border-radius: 25px;
   border: rgb(124, 3, 3) solid 1px;
 }
 #cidade {
   flex-basis: 1;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   padding: 1rem;
   margin: 1rem 2rem;
-  border: 1px solid green;
+  border: 1px solid #0065a3;
   border-radius: 25px;
-  color: var(--vermelho);
+  color: #0065a3;
   width: 35vw;
 }
 h3 {
@@ -166,11 +171,12 @@ h3 {
 }
 #mapa {
   flex-basis: 1;
-  background-color: rgb(171, 208, 171);
+  background-color: white;
   padding: 1rem;
-  border: 1px solid green;
+  border: 1px solid #ede900;
   border-radius: 25px;
   margin: 1rem 2rem;
+  align-self: flex-start;
 }
 #mapa iframe {
   width: 560px;
@@ -178,28 +184,49 @@ h3 {
 
 #historia {
   margin: 1rem 4rem;
-  background-color: rgb(254, 238, 238);
-  border-radius: 25px;
-  border: rgb(124, 3, 3) solid 1px;
-  padding: 1rem;
-  color: var(--vermelho);
-}
-.bloco-branco {
-  background-color: rgb(255, 255, 255);
-  border-radius: 25px;
-  padding: 1rem;
-}
-.bloco-vermelho {
   background-color: var(--vermelho);
   border-radius: 25px;
+  border: var(--vermelho) solid 1px;
   padding: 1rem;
+  color: var(--vermelho);
+  height: 150vh;
+}
+#historia h3 {
   color: white;
+}
+.historia {
+  display: flex;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  text-align: justify;
+  justify-content: center;
+  height: 130vh;
+}
+.bloco-branco {
+  background-color: #ede900;
+  border: #ede900 solid 1px;
+  border-radius: 25px;
+  padding: 1rem;
+  margin: 0.5rem 1rem;
+  width: 35vw;
+  height: min-content;
+  box-shadow: 2px 2px 2px 1px #f5f5f51b;
+}
+.bloco-vermelho {
+  background-color: #0065a3;
+  border-radius: 25px;
+  padding: 1rem;
+  margin: 0 1rem;
+  color: white;
+  width: 35vw;
+  align-self: flex-end;
 }
 
 .munduruku {
   display: flex;
   margin: 1rem 0;
-  background: rgba(214, 124, 124, 0.49);
   padding: 2rem;
   color: var(--vermelho);
   justify-content: center;
@@ -207,7 +234,6 @@ h3 {
 #muirapinima {
   display: flex;
   margin: 1rem 0;
-  background: rgba(214, 124, 124, 0.49);
   background-position: center;
   padding: 2rem;
   color: white;
@@ -216,7 +242,7 @@ h3 {
 .tribo {
   width: 50vw;
   margin: 0 2rem;
-  background-color: rgba(255, 255, 0, 0.779);
+  background-color: #ede900;
   padding: 2rem;
   border-radius: 25px;
 }
@@ -234,21 +260,27 @@ h3 {
   margin: 1rem auto;
 }
 .imagem img {
-  width: 500px;
+  max-width: 30vw;
 }
 footer {
   display: flex;
   justify-content: center;
-  background-color: rgb(8, 114, 67);
+  background-color: var(--vermelho);
   height: 200px;
   align-items: center;
   color: white;
   font-family: 'Poppins', sans-serif;
 }
+#fotos {
+  max-width: 80vw;
+  text-align: center;
+  background-color: #0065a3;
+  margin: auto;
+}
+
 @media only screen and (max-width: 500px) {
   .menu {
-    justify-content: center;
-    margin: auto;
+    margin: -2rem;
   }
   #logo {
     flex-direction: column;
@@ -262,9 +294,10 @@ footer {
     width: auto;
   }
   .timer {
-    color: var(--black);
+    color: var(--vermelho);
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
+    font-weight: 700;
     justify-content: center;
   }
   .titulos {
@@ -292,14 +325,27 @@ footer {
   }
   #historia {
     width: auto;
+    height: auto;
     margin: 2rem;
+  }
+  .historia {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .bloco-branco {
+    width: auto;
+    margin: 0.5rem 0;
+  }
+  .bloco-vermelho {
+    width: auto;
+    margin: 0;
   }
   .tribo {
     width: auto;
     margin: 1rem 0;
   }
   .imagem img {
-    width: 250px;
+    min-width: 250px;
   }
   .tribo-muira {
     width: auto;
